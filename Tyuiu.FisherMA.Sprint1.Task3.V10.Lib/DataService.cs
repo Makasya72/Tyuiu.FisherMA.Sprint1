@@ -1,4 +1,5 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint1;
+﻿using System.Globalization;
+using tyuiu.cources.programming.interfaces.Sprint1;
 
 namespace Tyuiu.FisherMA.Sprint1.Task3.V10.Lib
 {
@@ -14,7 +15,10 @@ namespace Tyuiu.FisherMA.Sprint1.Task3.V10.Lib
             int rubles = (int)Math.Floor(amount);
             int kopecks = (int)Math.Round((amount - rubles) * 100);
 
-            return $"{amount} руб. — это {rubles} руб. {kopecks:00} коп.";
+            
+            string amountStr = amount.ToString(CultureInfo.InvariantCulture);
+
+            return $"{amountStr} руб. - это {rubles} руб. {kopecks:00} коп.";
         }
     }
 }
