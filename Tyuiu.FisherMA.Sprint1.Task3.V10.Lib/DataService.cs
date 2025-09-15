@@ -6,7 +6,7 @@ namespace Tyuiu.FisherMA.Sprint1.Task3.V10.Lib
     {
         public string NumberToMoney(double number)
         {
-            throw new NotImplementedException();
+            return ToMoneyFormat(number);
         }
 
         public string ToMoneyFormat(double amount)
