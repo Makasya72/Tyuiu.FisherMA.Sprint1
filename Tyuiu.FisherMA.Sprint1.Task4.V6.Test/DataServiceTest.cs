@@ -9,12 +9,12 @@ namespace Tyuiu.FisherMA.Sprint1.Task4.V6.Test
         public void ValidExpression()
         {
             DataService ds = new DataService();
-            int x = 1;
-            int y = 2;
+            double x = 2;
+            double y = 3;
 
-            double wait = 0.186;
+            double expected = 3.833; 
             double res = ds.Calculate(x, y);
-            Assert.AreEqual(wait, res);
+            Assert.AreEqual(expected, res);
         }
     }
 }

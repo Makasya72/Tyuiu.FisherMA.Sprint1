@@ -1,5 +1,4 @@
-﻿
-using tyuiu.cources.programming.interfaces.Sprint1;
+﻿using tyuiu.cources.programming.interfaces.Sprint1;
 
 namespace Tyuiu.FisherMA.Sprint1.Task4.V6.Lib
 {
@@ -7,7 +6,7 @@ namespace Tyuiu.FisherMA.Sprint1.Task4.V6.Lib
     {
         public double Calculate(double x, double y)
         {
-            return Math.Round((Math.Sqrt(2 + Math.Abs(x - 2 * y))) / (3 * x * Math.Pow(y, 2)), 3);
+            return Math.Round(Math.Abs(Math.Pow(y, 2) - x) / (x * y), 3);
         }
     }
 }
