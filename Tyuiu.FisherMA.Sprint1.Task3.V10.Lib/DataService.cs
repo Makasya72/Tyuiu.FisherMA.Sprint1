@@ -4,6 +4,11 @@ namespace Tyuiu.FisherMA.Sprint1.Task3.V10.Lib
 {
     public class DataService : ISprint1Task3V10
     {
+        public string NumberToMoney(double number)
+        {
+            throw new NotImplementedException();
+        }
+
         public string ToMoneyFormat(double amount)
         {
             int rubles = (int)Math.Floor(amount);
