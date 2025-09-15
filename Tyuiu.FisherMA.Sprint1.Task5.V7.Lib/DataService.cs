@@ -4,15 +4,11 @@ namespace Tyuiu.FisherMA.Sprint1.Task5.V7.Lib
 {
     public class DataService : ISprint1Task5V7
     {
+        
         public int AngleToHoursMinutes(double f)
         {
-            throw new NotImplementedException();
-        }
-
-        public int DegreesToHours(double degrees)
-        {
-          
-            int hours = (int)(degrees / 30.0);
+            
+            int hours = (int)(f / 30.0);
             return hours;
         }
 
